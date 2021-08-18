@@ -1,3 +1,5 @@
+package com.reqres.pojos;
+
 public class CreateUserResponsePojo {
     private int page;
     private int per_page;

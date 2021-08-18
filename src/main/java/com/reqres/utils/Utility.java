@@ -1,3 +1,5 @@
+package com.reqres.utils;
+
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -9,18 +11,18 @@ import java.util.Properties;
 
 public class Utility {
 
-        public static RequestSpecification req;
-        public static RequestSpecification requestSpecification() throws IOException {
+        public RequestSpecification req;
+        public RequestSpecification requestSpecification() throws IOException {
             req=new RequestSpecBuilder().setBaseUri(getGlobalValue("baseUrl"))
                     .setContentType(ContentType.JSON).build();
                 return req;
         }
 
 
-        public static String getGlobalValue(String key) throws IOException
+        public String getGlobalValue(String key) throws IOException
         {
             Properties prop =new Properties();
-            FileInputStream fis =new FileInputStream("/Users/navaneethp/Desktop/Naveen/IJ/src/test/resources/env.properties");
+            FileInputStream fis =new FileInputStream("/Users/navaneethp/Desktop/Naveen/TVRestAssured/src/main/resources/env.properties");
             prop.load(fis);
             return prop.getProperty(key);
         }

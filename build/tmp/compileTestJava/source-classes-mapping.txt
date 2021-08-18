@@ -1,16 +1,2 @@
-CreateUserPayload.java
- CreateUserPayload
-UserDataPojo.java
- UserDataPojo
-CreateUserResponsePojo.java
- CreateUserResponsePojo
-Utility.java
- Utility
-TestClass.java
- TestClass
-ResponseValidator.java
- ResponseValidator
-CreateUserRequestPojo.java
- CreateUserRequestPojo
-SupportDataPojo.java
- SupportDataPojo
+ReqResApiTest.java
+ ReqResApiTest

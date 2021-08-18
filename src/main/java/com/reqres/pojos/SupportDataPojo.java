@@ -1,3 +1,5 @@
+package com.reqres.pojos;
+
 public class SupportDataPojo {
     private String url;
     private String text;

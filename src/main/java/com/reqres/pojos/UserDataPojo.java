@@ -1,3 +1,5 @@
+package com.reqres.pojos;
+
 public class UserDataPojo {
     private int id;
     private String email;
