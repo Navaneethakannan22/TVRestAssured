@@ -4,4 +4,4 @@
 Right click on 'ReqResApiTest' and choose Run 'ReqResApiTest'
 
 #To run from command line
-./gradlew clean build
+./gradlew clean runMyTests

@@ -16,10 +16,15 @@ dependencies {
     compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
     annotationProcessor 'org.projectlombok:lombok:1.18.20'
 
-
-
+}
+task runMyTests(type: Test) {
+    useTestNG {
+        parallel = "methods"
+        threadCount =2
+        useDefaultListeners = true
+        outputDirectory = file("$buildDir/")
+        testLogging.showStandardStreams = true
+    }
 }
 
-    test {
-        useTestNG()
-    }
+
