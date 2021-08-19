@@ -58,9 +58,9 @@ public class ReqResApiTest {
 
     @Test
     public void shouldUpdateUser() throws IOException {
-        CreateUserPayload user = new CreateUserPayload();
+        CreateUserRequestPojo req = CreateUserRequestPojo.builder().username("morpheous").job("king").build();
         Response updatedUser = given().spec(utility.requestSpecification()).
-                body(user.createUser("morpheous", "king")).
+                body(req).
                 when().
                 put(" /api/users/2");
 

@@ -9,10 +9,4 @@ public class CreateUserPayload {
                 "    \"job\": \""+job+"\"\n" +
                 "}";
     }
-//    public static CreateUserRequestPojo createUser(String uname,String job) {
-//        CreateUserRequestPojo req=new CreateUserRequestPojo();
-//        req.setUsername(uname);
-//        req.setJob(job);
-//        return req;
-//    }
 }

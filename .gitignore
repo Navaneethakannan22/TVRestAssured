@@ -2,3 +2,5 @@
 build/
 .gradle/
 gradle/
+settings.gradle
+local.properties

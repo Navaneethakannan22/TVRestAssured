@@ -1,4 +1,7 @@
 # TVRestAssured
-TV RestAssured API trials
 
-Right click on 'ReqresApiTest' and choose Run 'ReqresApiTest'
+#To run from class
+Right click on 'ReqResApiTest' and choose Run 'ReqResApiTest'
+
+#To run from command line
+./gradlew clean build
